@@ -84,445 +84,308 @@
     <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-slider">
-                <!-- Slide 1 -->
-                <div class="hero-slide active">
-                    <div class="hero-content">
-                        <h1>Effortless Style for the Metro Woman</h1>
-                        <p>Flattering fits and flowy fabrics for every day and every occasion.</p>
-                        <div class="hero-buttons">
-                            <a href="#new-in" class="btn btn-primary">Shop New In</a>
-                            <a href="#festive" class="btn btn-secondary">Festive Edit</a>
+        <!-- HOME VIEW - Main product listing page -->
+        <div id="home-view">
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-slider">
+                    <!-- Slide 1 -->
+                    <div class="hero-slide active">
+                        <div class="hero-content">
+                            <h1>Effortless Style for the Metro Woman</h1>
+                            <p>Flattering fits and flowy fabrics for every day and every occasion.</p>
+                            <div class="hero-buttons">
+                                <a href="#new-in" class="btn btn-primary">Shop New In</a>
+                                <a href="#festive" class="btn btn-secondary">Festive Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="hero-slide">
+                        <div class="hero-content">
+                            <h1>Festive Collection 2025</h1>
+                            <p>Celebrate in style with our curated festive ensembles.</p>
+                            <div class="hero-buttons">
+                                <a href="#festive" class="btn btn-primary">Explore Collection</a>
+                                <a href="#sale" class="btn btn-secondary">Shop Sale</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="hero-slide">
+                        <div class="hero-content">
+                            <h1>Plus Size Fashion</h1>
+                            <p>Inclusive designs that celebrate every body, every curve.</p>
+                            <div class="hero-buttons">
+                                <a href="#plus-size" class="btn btn-primary">Shop Plus Size</a>
+                                <a href="#new-in" class="btn btn-secondary">New Arrivals</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Slide 2 -->
-                <div class="hero-slide">
-                    <div class="hero-content">
-                        <h1>Festive Collection 2025</h1>
-                        <p>Celebrate in style with our curated festive ensembles.</p>
-                        <div class="hero-buttons">
-                            <a href="#festive" class="btn btn-primary">Explore Collection</a>
-                            <a href="#sale" class="btn btn-secondary">Shop Sale</a>
+
+                <!-- Slider Navigation -->
+                <div class="slider-dots">
+                    <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+                    <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+
+            <!-- Most Loved Products Section -->
+            <section class="most-loved" id="most-loved">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Most Loved</h2>
+                        <p>Best-selling styles our customers keep coming back for.</p>
+                    </div>
+
+                    <!-- Product cards will be dynamically generated here by JavaScript -->
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products loaded by script.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Offer Bundle Strip -->
+            <section class="offer-strip">
+                <div class="container">
+                    <div class="offers-grid">
+                        <div class="offer-card">
+                            <h3>2 Dresses @ ₹1999</h3>
+                            <p>Mix and match your favorite styles</p>
+                            <a href="#dresses" class="btn btn-small btn-outline">Shop Now</a>
+                        </div>
+
+                        <div class="offer-card">
+                            <h3>2 Tops @ ₹999</h3>
+                            <p>Perfect for everyday wear</p>
+                            <a href="#tops" class="btn btn-small btn-outline">Shop Now</a>
+                        </div>
+
+                        <div class="offer-card">
+                            <h3>Co-ords from ₹1499</h3>
+                            <p>Ready-to-wear matching sets</p>
+                            <a href="#coords" class="btn btn-small btn-outline">Shop Now</a>
                         </div>
                     </div>
                 </div>
-                <!-- Slide 3 -->
-                <div class="hero-slide">
-                    <div class="hero-content">
-                        <h1>Plus Size Fashion</h1>
-                        <p>Inclusive designs that celebrate every body, every curve.</p>
-                        <div class="hero-buttons">
-                            <a href="#plus-size" class="btn btn-primary">Shop Plus Size</a>
-                            <a href="#new-in" class="btn btn-secondary">New Arrivals</a>
+            </section>
+
+            <!-- Get the Look Section -->
+            <section class="get-the-look">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Get the Look</h2>
+                        <p>Curated outfits styled just for you.</p>
+                    </div>
+
+                    <div class="looks-grid">
+                        <article class="look-card">
+                            <div class="look-image">
+                                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=600&fit=crop" alt="Brunch Florals">
+                            </div>
+                            <div class="look-info">
+                                <h3>Brunch Florals</h3>
+                                <p>Effortless elegance for weekend gatherings</p>
+                                <a href="#brunch" class="btn btn-small">Shop This Look</a>
+                            </div>
+                        </article>
+
+                        <article class="look-card">
+                            <div class="look-image">
+                                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&h=600&fit=crop" alt="Workwear Chic">
+                            </div>
+                            <div class="look-info">
+                                <h3>Workwear Chic</h3>
+                                <p>Power dressing for the modern professional</p>
+                                <a href="#workwear" class="btn btn-small">Shop This Look</a>
+                            </div>
+                        </article>
+
+                        <article class="look-card">
+                            <div class="look-image">
+                                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop" alt="Evening Glam">
+                            </div>
+                            <div class="look-info">
+                                <h3>Evening Glam</h3>
+                                <p>Turn heads at your next soirée</p>
+                                <a href="#evening" class="btn btn-small">Shop This Look</a>
+                            </div>
+                        </article>
+
+                        <article class="look-card">
+                            <div class="look-image">
+                                <img src="https://images.unsplash.com/photo-1558769132-cb1aea0a2327?w=800&h=600&fit=crop" alt="Festive Favorites">
+                            </div>
+                            <div class="look-info">
+                                <h3>Festive Favorites</h3>
+                                <p>Celebrate in style with traditional elegance</p>
+                                <a href="#festive" class="btn btn-small">Shop This Look</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>What Our Customers Say</h2>
+                        <p>Real reviews from real customers</p>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Metro Design has become my go-to for comfortable yet stylish Indian wear. The fit is perfect and the fabrics are so breathable!"</p>
+                            <p class="testimonial-author">— Priya M., Mumbai</p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Finally found a brand that offers trendy plus-size options! The quality is excellent and the designs are so flattering."</p>
+                            <p class="testimonial-author">— Kavya R., Bangalore</p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p>"Love the easy returns and quick delivery. The co-ord sets are my absolute favorite for work from home days!"</p>
+                            <p class="testimonial-author">— Sneha K., Delhi</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Slider Navigation -->
-            <div class="slider-dots">
-                <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
-                <button class="dot" data-slide="1" aria-label="Slide 2"></button>
-                <button class="dot" data-slide="2" aria-label="Slide 3"></button>
-            </div>
-        </section>
+        </div>
 
-        <!-- Most Loved Products Section -->
-        <section class="most-loved" id="most-loved">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Most Loved</h2>
-                    <p>Best-selling styles our customers keep coming back for.</p>
+        <!-- PRODUCT DETAIL VIEW - Shown when a product is selected -->
+        <div id="product-detail-view" class="hidden">
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container">
+                    <a href="#" id="back-to-products">Home</a> &gt;
+                    <a href="#most-loved">Most Loved</a> &gt;
+                    <span id="breadcrumb-product">Product</span>
                 </div>
+            </section>
 
-                <div class="products-grid">
-                    <!-- Product Card 1 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-20 at 9.40.21 PM.jpeg" alt="Floral Maxi Dress">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
+            <!-- Product Detail -->
+            <section class="product-detail">
+                <div class="container">
+                    <div class="product-detail-grid">
+                        <!-- Product Image -->
+                        <div class="product-detail-image">
+                            <img id="product-main-image" src="" alt="">
                         </div>
-                        <div class="product-info">
-                            <h3>Floral Maxi Dress</h3>
-                            <p class="product-price">₹1,899</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
 
-                    <!-- Product Card 2 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-20 at 9.40.21 PM (1).jpeg" alt="Printed Co-ord Set">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Printed Co-ord Set</h3>
-                            <p class="product-price">₹2,199</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                        <!-- Product Info -->
+                        <div class="product-detail-info">
+                            <p class="product-category" id="product-category">Category</p>
+                            <h1 id="product-name">Product Name</h1>
+                            <p class="product-detail-price" id="product-price">₹0</p>
 
-                    <!-- Product Card 3 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-20 at 9.40.21 PM (2).jpeg" alt="Embroidered Kurta Set">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Embroidered Kurta Set</h3>
-                            <p class="product-price">₹1,699</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Description -->
+                            <div class="product-description">
+                                <h3>Description</h3>
+                                <p id="product-description">Product description goes here.</p>
+                            </div>
 
-                    <!-- Product Card 4 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-20 at 9.40.21 PM (3).jpeg" alt="Linen Shirt Dress">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Linen Shirt Dress</h3>
-                            <p class="product-price">₹1,599</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Size Selection -->
+                            <div class="product-options">
+                                <h3>Select Size</h3>
+                                <div class="size-options" id="size-options">
+                                    <!-- Sizes will be populated by JavaScript -->
+                                </div>
+                            </div>
 
-                    <!-- Product Card 5 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.43 PM.jpeg" alt="Wrap Top">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Wrap Top</h3>
-                            <p class="product-price">₹899</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Color Selection -->
+                            <div class="product-options">
+                                <h3>Select Color</h3>
+                                <div class="color-options" id="color-options">
+                                    <!-- Colors will be populated by JavaScript -->
+                                </div>
+                            </div>
 
-                    <!-- Product Card 6 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.43 PM (1).jpeg" alt="Wide Leg Palazzo">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Wide Leg Palazzo</h3>
-                            <p class="product-price">₹999</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Quantity -->
+                            <div class="product-options">
+                                <h3>Quantity</h3>
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn" id="decrease-qty" aria-label="Decrease quantity">−</button>
+                                    <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                                    <button class="quantity-btn" id="increase-qty" aria-label="Increase quantity">+</button>
+                                </div>
+                            </div>
 
-                    <!-- Product Card 7 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.44 PM.jpeg" alt="Printed Kaftan">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Printed Kaftan</h3>
-                            <p class="product-price">₹1,399</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Action Buttons -->
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-large" id="add-to-cart">Add to Cart</button>
+                                <button class="btn btn-secondary btn-large" id="buy-now">Buy Now</button>
+                                <button class="wishlist-btn-large" id="add-to-wishlist" aria-label="Add to wishlist">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </button>
+                            </div>
 
-                    <!-- Product Card 8 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.44 PM (1).jpeg" alt="Tiered Midi Skirt">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Tiered Midi Skirt</h3>
-                            <p class="product-price">₹1,299</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Product Features -->
+                            <div class="product-features">
+                                <h3>Key Features</h3>
+                                <ul id="product-features">
+                                    <!-- Features will be populated by JavaScript -->
+                                </ul>
+                            </div>
 
-                    <!-- Product Card 9 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.44 PM (2).jpeg" alt="Embellished Tunic">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Embellished Tunic</h3>
-                            <p class="product-price">₹1,799</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
+                            <!-- Delivery Info -->
+                            <div class="delivery-info">
+                                <div class="info-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="1" y="3" width="15" height="13"></rect>
+                                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                    </svg>
+                                    <span>Free shipping on orders above ₹1499</span>
+                                </div>
+                                <div class="info-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="3 9 12 2 21 9"></polyline>
+                                        <path d="M12 2v20"></path>
+                                        <path d="M5 22h14"></path>
+                                    </svg>
+                                    <span>Easy 7-day returns & exchanges</span>
+                                </div>
+                                <div class="info-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>100% secure payment</span>
+                                </div>
+                            </div>
 
-                    <!-- Product Card 10 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.45 PM.jpeg" alt="Cotton Kurta Set">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <div class="product-info">
-                            <h3>Cotton Kurta Set</h3>
-                            <p class="product-price">₹1,499</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 11 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.45 PM (1).jpeg" alt="Designer Anarkali">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Anarkali</h3>
-                            <p class="product-price">₹2,499</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 12 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.45 PM (2).jpeg" alt="Casual Jumpsuit">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Casual Jumpsuit</h3>
-                            <p class="product-price">₹1,999</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 13 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.46 PM.jpeg" alt="Ethnic Palazzo Set">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Ethnic Palazzo Set</h3>
-                            <p class="product-price">₹1,599</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 14 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.46 PM (1).jpeg" alt="Festive Lehenga">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Festive Lehenga</h3>
-                            <p class="product-price">₹2,999</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 15 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.47 PM.jpeg" alt="Summer Maxi Dress">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Summer Maxi Dress</h3>
-                            <p class="product-price">₹1,899</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-
-                    <!-- Product Card 16 -->
-                    <article class="product-card">
-                        <div class="product-image">
-                            <img src="productimages/WhatsApp Image 2025-11-22 at 8.51.47 PM (1).jpeg" alt="Trendy Co-ord Set">
-                            <button class="wishlist-btn" aria-label="Add to wishlist">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="product-info">
-                            <h3>Trendy Co-ord Set</h3>
-                            <p class="product-price">₹2,199</p>
-                            <button class="btn btn-small">View Details</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Offer Bundle Strip -->
-        <section class="offer-strip">
-            <div class="container">
-                <div class="offers-grid">
-                    <div class="offer-card">
-                        <h3>2 Dresses @ ₹1999</h3>
-                        <p>Mix and match your favorite styles</p>
-                        <a href="#dresses" class="btn btn-small btn-outline">Shop Now</a>
-                    </div>
-
-                    <div class="offer-card">
-                        <h3>2 Tops @ ₹999</h3>
-                        <p>Perfect for everyday wear</p>
-                        <a href="#tops" class="btn btn-small btn-outline">Shop Now</a>
-                    </div>
-
-                    <div class="offer-card">
-                        <h3>Co-ords from ₹1499</h3>
-                        <p>Ready-to-wear matching sets</p>
-                        <a href="#coords" class="btn btn-small btn-outline">Shop Now</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Get the Look Section -->
-        <section class="get-the-look">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Get the Look</h2>
-                    <p>Curated outfits styled just for you.</p>
-                </div>
-
-                <div class="looks-grid">
-                    <article class="look-card">
-                        <div class="look-image">
-                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=600&fit=crop" alt="Brunch Florals">
-                        </div>
-                        <div class="look-info">
-                            <h3>Brunch Florals</h3>
-                            <p>Effortless elegance for weekend gatherings</p>
-                            <a href="#brunch" class="btn btn-small">Shop This Look</a>
-                        </div>
-                    </article>
-
-                    <article class="look-card">
-                        <div class="look-image">
-                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&h=600&fit=crop" alt="Workwear Chic">
-                        </div>
-                        <div class="look-info">
-                            <h3>Workwear Chic</h3>
-                            <p>Power dressing for the modern professional</p>
-                            <a href="#workwear" class="btn btn-small">Shop This Look</a>
-                        </div>
-                    </article>
-
-                    <article class="look-card">
-                        <div class="look-image">
-                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop" alt="Evening Glam">
-                        </div>
-                        <div class="look-info">
-                            <h3>Evening Glam</h3>
-                            <p>Turn heads at your next soirée</p>
-                            <a href="#evening" class="btn btn-small">Shop This Look</a>
-                        </div>
-                    </article>
-
-                    <article class="look-card">
-                        <div class="look-image">
-                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea0a2327?w=800&h=600&fit=crop" alt="Festive Favorites">
-                        </div>
-                        <div class="look-info">
-                            <h3>Festive Favorites</h3>
-                            <p>Celebrate in style with traditional elegance</p>
-                            <a href="#festive" class="btn btn-small">Shop This Look</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <h2>What Our Customers Say</h2>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Metro Design has become my go-to for comfortable yet stylish Indian wear. The fit is perfect and the fabrics are so breathable!"</p>
-                        <p class="testimonial-author">— Priya M., Mumbai</p>
+            <!-- Related Products -->
+            <section class="related-products">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>You May Also Like</h2>
+                        <p>More products you'll love</p>
                     </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Finally found a brand that offers trendy plus-size options! The quality is excellent and the designs are so flattering."</p>
-                        <p class="testimonial-author">— Kavya R., Bangalore</p>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Love the easy returns and quick delivery. The co-ord sets are my absolute favorite for work from home days!"</p>
-                        <p class="testimonial-author">— Sneha K., Delhi</p>
+                    <div class="products-grid" id="related-products">
+                        <!-- Related products will be populated by JavaScript -->
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
 
     </main>
 
