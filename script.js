@@ -399,6 +399,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call this function to generate all product cards
     renderProductCards();
 
+    // Populate additional sections with products
+    function populateSection(sectionId, productList) {
+        const sectionGrid = document.getElementById(sectionId);
+        if (sectionGrid) {
+            sectionGrid.innerHTML = '';
+            productList.forEach(product => {
+                const card = createProductCard(product);
+                sectionGrid.appendChild(card);
+            });
+        }
+    }
+
+    // New In - Show latest products (first 8)
+    populateSection('new-in-grid', products.slice(0, 8));
+
+    // Clothing - Show all products
+    populateSection('clothing-grid', products);
+
+    // Collections - Show a curated selection (products 4-11)
+    populateSection('collections-grid', products.slice(4, 12));
+
+    // Plus Size - Show all products (since all products support XXL)
+    populateSection('plus-size-grid', products.slice(0, 8));
+
+    // Sale - Show random selection with implied discount (first 6 products)
+    populateSection('sale-grid', products.slice(0, 6));
+
 
     // ========================================
     // WISHLIST BUTTON INTERACTION
